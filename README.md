@@ -1,4 +1,4 @@
-# ZhouYM Personal Homepage
+# Yimiao Zhou's Homepage
 
 这是一个可直接部署到 GitHub Pages 的静态个人主页，用于整理数学研究兴趣、论文阅读和学习笔记。
 
