@@ -58,11 +58,18 @@ hr {
 
 a {
   color: var(--link);
-  text-decoration: underline;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 2px;
 }
 
 a:visited {
   color: var(--visited);
+}
+
+a:hover {
+  color: #0b63ce;
+  background: #eef5ff;
 }
 
 ul {
@@ -86,7 +93,9 @@ li {
   grid-row: 1;
   width: 260px;
   max-width: 100%;
+  max-height: 360px;
   height: auto;
+  object-fit: cover;
   border: 1px solid #dddddd;
 }
 
