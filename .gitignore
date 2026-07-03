@@ -1,0 +1,9 @@
+tmp/
+publish/
+docx_render_check/
+output/
+*.docx
+*.csv
+*.pdf
+*.py
+.DS_Store
