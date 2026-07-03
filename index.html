@@ -3,149 +3,116 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ZhouYM | Personal Homepage</title>
+    <title>ZhouYM | Mathematician</title>
     <meta
       name="description"
-      content="ZhouYM 的个人主页，整理数学学习笔记、课程材料、阅读清单和项目。"
+      content="ZhouYM 的个人主页，整理数学研究兴趣、论文阅读和学习笔记。"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="ZhouYM 首页">ZhouYM</a>
+      <a class="brand" href="#top">ZhouYM</a>
       <nav aria-label="页面导航">
-        <a href="#about">关于</a>
-        <a href="#notes">笔记</a>
-        <a href="#projects">项目</a>
-        <a href="#contact">联系</a>
+        <a href="#about">About</a>
+        <a href="#interests">Interests</a>
+        <a href="#notes">Notes</a>
+        <a href="#contact">Links</a>
       </nav>
     </header>
 
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-content">
-          <p class="eyebrow">Mathematics · Notes · Projects</p>
-          <h1 id="hero-title">ZhouYM</h1>
-          <p class="subtitle">一个整理数学学习、阅读和项目的个人主页。</p>
-          <div class="hero-actions" aria-label="主要链接">
-            <a class="button primary" href="https://github.com/ZhouYM222">GitHub</a>
-            <a class="button secondary" href="#notes">查看笔记</a>
+    <main id="top" class="page">
+      <section class="profile" aria-labelledby="profile-title">
+        <img class="avatar" src="https://avatars.githubusercontent.com/u/286338789?v=4" alt="ZhouYM 的 GitHub 头像" />
+        <div class="profile-copy">
+          <p class="kicker">Mathematician</p>
+          <h1 id="profile-title">ZhouYM</h1>
+          <p class="subtitle">
+            I study mathematics, with current notes around number theory, classical papers, and the architecture of proofs.
+          </p>
+          <div class="quick-links" aria-label="主要链接">
+            <a href="https://github.com/ZhouYM222">GitHub</a>
+            <a href="#notes">Notes</a>
+            <a href="https://ZhouYM222.github.io/">Homepage</a>
           </div>
         </div>
-        <aside class="profile-panel" aria-label="个人资料摘要">
-          <img src="https://avatars.githubusercontent.com/u/286338789?v=4" alt="ZhouYM 的 GitHub 头像" />
-          <div>
-            <p>Current Focus</p>
-            <h2>Number Theory</h2>
-            <span>Reading notes, seminar materials, and small tools.</span>
-          </div>
-        </aside>
       </section>
 
-      <section id="about" class="section intro-grid">
-        <div>
-          <p class="section-label">About</p>
-          <h2>把问题、证明和想法放在一个可持续更新的地方。</h2>
+      <section id="about" class="block">
+        <div class="block-title">
+          <span>01</span>
+          <h2>About</h2>
         </div>
-        <div class="intro-copy">
+        <div class="notion-card">
           <p>
-            这里用于收藏我的数学学习笔记、论文阅读记录、课程材料和一些小工具。主页本身是一个轻量静态网站，可以直接部署到 GitHub Pages。
+            我是一个数学家。这个主页用来整理我的数学学习、论文阅读、讨论班材料和一些仍在生长中的想法。
           </p>
           <p>
-            目前内容以数论与数学论文阅读为主，也会逐步加入课程整理、讲义、推荐阅读和实验性项目。
+            I use this page as a small public notebook: part index, part reading archive, part reminder of problems worth returning to.
           </p>
         </div>
       </section>
 
-      <section class="section focus-grid" aria-label="关注方向">
-        <article>
-          <strong>01</strong>
-          <h3>数学笔记</h3>
-          <p>整理定理、证明、例子和阅读时遇到的关键问题。</p>
-        </article>
-        <article>
-          <strong>02</strong>
-          <h3>论文阅读</h3>
-          <p>记录经典论文的背景、主要结果和证明思路。</p>
-        </article>
-        <article>
-          <strong>03</strong>
-          <h3>学习材料</h3>
-          <p>收集课程资料、阅读清单和面向讨论的活动方案。</p>
-        </article>
+      <section id="interests" class="block">
+        <div class="block-title">
+          <span>02</span>
+          <h2>Research Interests</h2>
+        </div>
+        <div class="tag-grid" aria-label="研究兴趣">
+          <span>Number Theory</span>
+          <span>Prime Numbers</span>
+          <span>Analytic Methods</span>
+          <span>Classical Papers</span>
+          <span>Proofs and Structure</span>
+          <span>Mathematical Exposition</span>
+        </div>
       </section>
 
-      <section id="notes" class="section notes-section">
-        <div class="section-heading">
-          <p class="section-label">Notes</p>
-          <h2>最近整理</h2>
+      <section id="notes" class="block">
+        <div class="block-title">
+          <span>03</span>
+          <h2>Notes</h2>
         </div>
-        <div class="resource-list">
-          <a href="./Selberg_1949_素数定理初等证明_阅读笔记.md">
-            <time>Reading note</time>
-            <div>
-              <h3>Selberg 1949 素数定理初等证明</h3>
-              <p>关于 Selberg 初等证明路线的一份阅读笔记。</p>
-            </div>
+        <div class="note-list">
+          <a class="note-card" href="./Selberg_1949_素数定理初等证明_阅读笔记.md">
+            <div class="note-meta">Reading note</div>
+            <h3>Selberg 1949 素数定理初等证明</h3>
+            <p>关于 Selberg 初等证明路线的一份阅读笔记。</p>
           </a>
-          <a href="https://github.com/ZhouYM222/daily-number-theory-recommendations/blob/main/2026-06-20.md">
-            <time>Number theory</time>
-            <div>
-              <h3>Daily Number Theory Recommendations</h3>
-              <p>数论方向的日常阅读推荐和材料索引。</p>
-            </div>
+          <a class="note-card" href="https://github.com/ZhouYM222/daily-number-theory-recommendations/blob/main/2026-06-20.md">
+            <div class="note-meta">Number theory</div>
+            <h3>Daily Number Theory Recommendations</h3>
+            <p>数论方向的日常阅读推荐和材料索引。</p>
           </a>
-          <a href="https://github.com/ZhouYM222/landmark-papers-seminar">
-            <time>Seminar</time>
-            <div>
-              <h3>数学重要论文讨论班</h3>
-              <p>论文讨论班网站与活动材料。</p>
-            </div>
+          <a class="note-card" href="https://github.com/ZhouYM222/landmark-papers-seminar">
+            <div class="note-meta">Seminar</div>
+            <h3>数学重要论文讨论班</h3>
+            <p>论文讨论班网站与活动材料。</p>
           </a>
         </div>
       </section>
 
-      <section id="projects" class="section projects-section">
-        <div class="section-heading">
-          <p class="section-label">Projects</p>
-          <h2>项目与工具</h2>
+      <section id="contact" class="block">
+        <div class="block-title">
+          <span>04</span>
+          <h2>Links</h2>
         </div>
-        <div class="project-grid">
-          <article>
-            <span>Python</span>
-            <h3>Dorm Lottery</h3>
-            <p>用于宿舍分配抽签的小脚本与示例数据。</p>
-          </article>
-          <article>
-            <span>Static Site</span>
-            <h3>Personal Homepage</h3>
-            <p>这个 GitHub Pages 个人主页，采用纯 HTML 与 CSS。</p>
-          </article>
-          <article>
-            <span>Documents</span>
-            <h3>Reading Archive</h3>
-            <p>持续整理论文、讲稿和课程相关文档。</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="contact" class="section contact-section">
-        <div>
-          <p class="section-label">Contact</p>
-          <h2>更多内容会持续更新在 GitHub。</h2>
-          <p>如果你想补充邮箱、学校、研究兴趣或个人简介，只需要修改本页对应文字即可。</p>
-        </div>
-        <div class="contact-panel">
-          <h3>链接</h3>
-          <a class="button primary" href="https://github.com/ZhouYM222">github.com/ZhouYM222</a>
-          <a class="text-link" href="https://ZhouYM222.github.io/">GitHub Pages 主页</a>
+        <div class="link-list">
+          <a href="https://github.com/ZhouYM222">
+            <span>GitHub</span>
+            <strong>github.com/ZhouYM222</strong>
+          </a>
+          <a href="https://ZhouYM222.github.io/">
+            <span>Website</span>
+            <strong>zhouym222.github.io</strong>
+          </a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>ZhouYM · Personal Homepage</p>
-      <a href="#top">返回顶部</a>
+      <p>ZhouYM · Mathematician</p>
+      <a href="#top">Back to top</a>
     </footer>
   </body>
 </html>
