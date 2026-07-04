@@ -20,7 +20,7 @@ body {
   margin: 0;
   color: var(--ink);
   background: var(--paper);
-  font-family: Georgia, "Times New Roman", "Songti SC", "Noto Serif CJK SC", serif;
+  font-family: Georgia, "Times New Roman", serif;
   font-size: 18px;
   line-height: 1.5;
 }
