@@ -9,3 +9,4 @@ output/
 *.py
 .DS_Store
 !course-notes/etale-cohomology-notes.pdf
+!course-notes/mixed-hodge-theory-open-varieties-degenerations.pdf
