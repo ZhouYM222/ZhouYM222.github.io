@@ -8,3 +8,4 @@ output/
 !course-notes/representation-theory.pdf
 *.py
 .DS_Store
+!course-notes/etale-cohomology-notes.pdf
